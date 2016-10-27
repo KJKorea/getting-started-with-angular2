@@ -18,12 +18,14 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(() => {
+      System.import('app').catch((err) => {
         console.error(err);
       });
     </script>
 </head>
 <body class="container">
-    I am the app!
+
+    <my-app></my-app>
+    
 </body>
 </html>
